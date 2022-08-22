@@ -1,0 +1,124 @@
+AI is huge st of tools that makes computer behave intelligently,it comprises of several subfiels robotics and machine learning'
+machine learning are sets of tools for making inferences and predictions from data.
+what machine learning can do, it learns patters from existing data n applies it to new data
+predict future events
+1 will it rain tomorrow?
+yes (77% probability
+-----------------)
+infer the causes of events and behaviors
+why does it rain
+time of the year,humidity levels,temperature,location,etc
+--------------------------
+infer patterns
+what are different types of weather conditions
+rain,sunny,overcast,fog, etc
+================================
+MACHINE LEARNING MODELS
+---------------------------
+Generating movie recommendation MODEL   THE EXERCISE
+SO I CHOOSE GENER N A PAETICULAR MOVIE SO IT INFERED A 
+LIST OF MOVIE FOR ME THAT I WILL LIKE ON PROBABILITY
+
+
+1 If you've ever used a streaming service like Netflix, 
+you've seen how these platforms personalize their home pages 
+based on what they think you would enjoy watching next. 
+To achieve this, machine learning is used to come up 
+with recommendations based on your viewing history, 
+the viewing history of similar users, and any other 
+data that could help understand what you enjoy.
+
+In this exercise, you'll find a simplified movie 
+recommendation model. It takes as input your favorite
+ genres as well as one movie characteristic. 
+
+
+2 latest machine learning project on predicting whether a tweet is 
+fake or not. Twitter has provided them with a labeled dataset in 
+hopes of improving their spam detection system.
+===============================
+3 TYPES OF MACHINE LEARNING, 
+REINFORCEMENT LEARNING Used to determine sequencial actions..like a robot deciding its part or its next move in a chess game.its more mathematical..so we dont study it for now
+-------
+SUPERVISED LEARNING  training models is labeled here we have data and work wit it
+UNSUPERVISED "        training data only has features, used for anomaly detection and clustering
+
+
+Machine learning is integrated in many of the technologies we use everyday. For example, have you noticed that platforms will have personalized recommendations, whether it's another funny video on Youtube or a book by your favorite author on Amazon? These are "recommender systems" and they typically consist of a machine learning model trained on a user's browsing history.
+
+Imagine the recommender system of your favorite online clothing store. They have data on all the clothes you've viewed and the clothes you ended up buying. This is enough to make a model to output personalized clothing recommendation for you. Listed here are the tasks needed to create this model, however, they are incorrectly ordered. Can you correctly order them?
+
+==================================
+SUPERVISED LEARNING is a labelling machine,it takes an observation and asigns it to a label
+its 2 parts==classification n regression
+CLASSIFICATION = ASSIGNING  a category to an observation,we are predicting a discreet viable, a viable that
+eg---will this customer STOP its subscribtion? yes,No
+
+Is this mole cancerous
+yes,no
+
+what kind of wine is that
+red,rose,white
+we feed the model observations  
+====================================
+REGRESSION = ASSIGNING  a category a continuous variable, is a variable that can take any value
+ie how much will this stock br worth?
+what is this exoplanets mass?
+how tall will this child be as an adult?
+-------------------------------------------
+CLASSIFICATION VS REGRESSION
+
+Regression = continuous
+any value within a finite(height) or infinite(time)interval
+20F,20.7f,20.9F...
+ classification = category 
+one of few specific values
+cold,mild,hot
+------------------------------
+===========================
+
+UNSUPERVISED LEARNING 
+Unsupervised learning = no target column
+no guidance
+ looks at the whole data set and tries to find patterns
+........................
+we focus on (clustering.....association.....n anomally detection)
+clustering consists of identifying groups in ur dataset
+the observation in these groups shares strong similarities 
+with members of the groups than members of other groups
+-----------------------------------
+CLUSTERING MODELS
+-----------------------
+K MEans specify the number of clusters..requires u to specify 
+in advance the no of clusters u will like to identify
+DBSCAN (density-based spatial clustering of applications with noise)
+no specify no of cluster but what constitute the clusters, like members of observation in one cluster.
+
+ANOMALY DETECTION is all about detecting outliers
+OUTLIERS are observations that strongly differ from the others 
+it turns out that this point is the sum total of the other observation
+
+used unsupervised learning to find some anomaly detection use cases
+Discover devices that fail faster or last longer
+discover fraudsters that manage trick the system
+discover patients that resist a fatal disease
+
+ANOMALY DETECTION
+----------------------------
+it consists in finding relationship between observations like 
+market basket analytics ie which objects are bought together
+people who buy bread or likely to buy jam
+people who buy beer and likely to groundnuts
+people who buy wine and likely to buy cheese
+-----------------------------
+
+EVALUATING PERFORMANCE 
+======================
+the first thing to look for when evaluating is OVERFITING
+(ie when our model performs great on training but poorly on testing data)
+it means model memorised training data  and cant generalise to new data.
+that is why we need to split our data into 2 sets
+
+
+to measure d models performance we can use accuracy which is the number of predicted observtion/ all obsv
+ sensitivity= true/true + false negative= 1/3=33.33%
