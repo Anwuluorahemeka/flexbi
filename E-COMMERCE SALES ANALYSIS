@@ -1,0 +1,15 @@
+I have an ecommerce company data that wants to know how much
+they have been losing due to dull and slow business return. 
+So was able to analyze their data further with Microsoft power bi apply some month over month,
+same period last year and was able to get an insight, visualized with power bi and presented detailed solution which helped
+
+
+%profitmargin = DIVIDE( [Total profit], [Totalsales], 0)
+
+Total costs = 
+SUMX(fashion,fashion[Sales] * fashion[Quantity] )
+
+
+Total profit = SUM(fashion[Profit])
+
+Totalsales = sum(fashion[Sales])
