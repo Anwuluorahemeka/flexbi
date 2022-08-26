@@ -1,0 +1,10 @@
+SUPER STORE In this sales report is a super store which is located in various regions of different continents,
+we analyzed its generated revenue buy its cathegories and also regions.
+after cleaning the data and found all columns of the data set as should be, 
+we only needed this measure to draw insight fro the dataset to enhance sales performance
+
+
+avg unit price = AVERAGE('5000 Sales Records'[Unit Cost])
+
+
+
