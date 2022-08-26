@@ -1,0 +1,14 @@
+THESE DAX MEASURES WERE USED TO CALCULATE THE VARIABLES NEEDED TO PERFOM ANALYSIS 
+ON THE COMMERCIALS DATA SET IN OTHER TO VISUALIZE IT ON A TABLE/MATRIX FORMAT IN POWER BI 
+
+Totaltv viewers = sum('superbowl_commercials (2)'[TV Viewers])
+
+Average of funny = AVERAGEX(
+                    VALUES('superbowl_commercials (2)'[TV Viewers]),
+                       [funny or not]) 
+
+
+Funny or not = SELECTEDVALUE('superbowl_commercials (2)'[Funny] ) + 0
+
+
+Sumoffunnyor not = SUM('superbowl_commercials (2)'[Funny])
