@@ -1,0 +1,27 @@
+Zee is another super market that is biased about its profits ,
+so i ran this analysis to enqire 
+how sales took place on different loactions  by month and yearly 
+also gifted all sales rep with higher sales record as encouragement.
+						
+
+average margins per customer = divide( [avg profit per transaction], [average sales per customer], 0)
+
+average sales per customer = AVERAGEX(
+                                VALUES(sales[Customers] ),
+                                  [total amount])
+
+avg profit per transaction = AVERAGEX(
+                                VALUES(sales[Customers] ),
+                                  [total profit])   
+
+
+profit target met? = if([profit%]>0.5, "🏆", "🏅")
+
+
+profit% = DIVIDE([total profit],[total amount])
+
+total amount = sum(sales[Amountsold])
+
+total cost = sum(sales[actual C0ST])
+
+total profit = [total amount]-[total cost]
