@@ -1,0 +1,44 @@
+In this analysis we consolidated different generated data according to customers survey, cleaned in power query, applied dax-measures and visualized with power.
+
+BELOW ARE ESSENTIAL DAX MEASURES USED AS NECESSARY.
+
+Average of flightdistance = AVERAGE(airline_passenger_satisfaction[Flight Distance])
+
+avg of arivaldelay = AVERAGE(airline_passenger_satisfaction[Arrival Delay])
+
+avg of departure delay = AVERAGE(airline_passenger_satisfaction[Departure Delay])
+
+sumofvalues = SUM('airlinesatisfaction(2)'[Value])
+
+totalsum = SUM(airline_passenger_satisfaction[ID])
+
+avgvaluue = AVERAGE('airlinesatisfaction(2)'[Value])
+
+avgvaluue star rating = 
+VAR __MAX_NUMBER_OF_STARS = 5
+VAR __MIN_RATED_VALUE = 1
+VAR __MAX_RATED_VALUE = 5
+VAR __BASE_VALUE = [avgvaluue]
+VAR __NORMALIZED_BASE_VALUE =
+	MIN(
+		MAX(
+			DIVIDE(
+				__BASE_VALUE - __MIN_RATED_VALUE,
+				__MAX_RATED_VALUE - __MIN_RATED_VALUE
+			),
+			0
+		),
+		1
+	)
+VAR __STAR_RATING = ROUND(__NORMALIZED_BASE_VALUE * __MAX_NUMBER_OF_STARS, 0)
+RETURN
+	IF(
+		NOT ISBLANK(__BASE_VALUE),
+		REPT(UNICHAR(9733), __STAR_RATING)
+			& REPT(UNICHAR(9734), __MAX_NUMBER_OF_STARS - __STAR_RATING)
+	)
+
+
+
+
+							
